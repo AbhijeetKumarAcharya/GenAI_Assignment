@@ -21,7 +21,7 @@ if st.button("Ask", key="ask_button"):
         st.warning("Please enter a question.")
     else:
         endpoint = "ask" if mode == "RAG Mode" else "agent-ask"
-        url = "http://127.0.0.1:8000/" + endpoint
+        url = "https://genai-backend-nnkl.onrender.com/" + endpoint
 
         response = requests.post(
             url,
